@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>モーションサウンドアプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🚶‍♂️ モーションサウンド</h1>
+        
+        <div class="status-card">
+            <div class="status-item">
+                <span class="label">状態:</span>
+                <span id="status" class="value">待機中</span>
+            </div>
+            <div class="status-item">
+                <span class="label">歩数:</span>
+                <span id="stepCount" class="value">0</span>
+            </div>
+            <div class="status-item">
+                <span class="label">ジャンプ:</span>
+                <span id="jumpCount" class="value">0</span>
+            </div>
+        </div>
+
+        <div class="sensor-data">
+            <div class="sensor-item">
+                <span class="sensor-label">X:</span>
+                <span id="accelX" class="sensor-value">0.0</span>
+            </div>
+            <div class="sensor-item">
+                <span class="sensor-label">Y:</span>
+                <span id="accelY" class="sensor-value">0.0</span>
+            </div>
+            <div class="sensor-item">
+                <span class="sensor-label">Z:</span>
+                <span id="accelZ" class="sensor-value">0.0</span>
+            </div>
+        </div>
+
+        <button id="startBtn" class="btn btn-primary">スタート</button>
+        <button id="stopBtn" class="btn btn-secondary" disabled>ストップ</button>
+        
+        <div class="info">
+            <p>📱 スマホを持って歩いたりジャンプしてみてください</p>
+            <p>⚠️ このアプリは加速度センサーを使用します</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
